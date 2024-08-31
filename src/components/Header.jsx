@@ -12,15 +12,18 @@ const Header = () => {
   return (
     <header className="header themeChange sticky top-0 z-50 flex items-center justify-between p-4 shadow-md">
       {/* Toggle Button for Small and Medium Screens */}
-      <div className="flex space-x-3 md:hidden">
-        <button onClick={toggleSidebar} className="textColor">
-          <FaBars size={24} />
-        </button>
+      <div className="flex items-center justify-between gap-2">
+        <div className="flex space-x-3 md:hidden">
+          <button onClick={toggleSidebar} className="textColor">
+            <FaBars size={24} />
+          </button>
+        </div>
+
+        <div className="logo textColor text-2xl font-bold md:flex">
+          Zulfiker.
+        </div>
       </div>
 
-      <div className="logo textColor mr-32 text-2xl font-bold  md:flex">
-        Zulfiker.
-      </div>
       {/* Navigation Menu for Large Screens */}
       <nav className="hidden space-x-6 md:flex">
         <a href="#home" className="textColor">
