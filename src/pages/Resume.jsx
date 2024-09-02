@@ -1,6 +1,5 @@
-// src/pages/Resume.jsx
-
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 import {
   aboutMeData,
   educationData,
@@ -20,28 +19,56 @@ function Resume() {
       case "Experience":
         return (
           <>
-            <h2 className="font mb-4 text-3xl font-bold">My Experience</h2>
+            <motion.h2
+              className="font mb-4 text-3xl font-bold"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.5 }}
+            >
+              My Experience
+            </motion.h2>
             <Experience data={experienceData} />
           </>
         );
       case "Education":
         return (
           <>
-            <h2 className="font mb-4 text-3xl font-bold">My Education</h2>
+            <motion.h2
+              className="font mb-4 text-3xl font-bold"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.5 }}
+            >
+              My Education
+            </motion.h2>
             <Education data={educationData} />
           </>
         );
       case "Skills":
         return (
           <>
-            <h2 className="font mb-4 text-3xl font-bold">My Skills</h2>
+            <motion.h2
+              className="font mb-4 text-3xl font-bold"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.5 }}
+            >
+              My Skills
+            </motion.h2>
             <Skills data={skillsData} />
           </>
         );
       case "AboutMe":
         return (
           <>
-            <h2 className="font mb-4 text-3xl font-bold">About Me</h2>
+            <motion.h2
+              className="font mb-4 text-3xl font-bold"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.5 }}
+            >
+              About Me
+            </motion.h2>
             <AboutMe data={aboutMeData} />
           </>
         );
@@ -51,48 +78,76 @@ function Resume() {
   };
 
   return (
-    <div className="themeChange  px-4 py-24">
-      <div className=" hero textColor">
+    <motion.div
+      className="themeChange px-4 py-24"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.6 }}
+    >
+      <div className="hero textColor">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
-          <div className="space-y-4">
-            <h1 className="text-5xl">Why Hire Me? </h1>
-            <button
+          <motion.div
+            className="space-y-4"
+            initial={{ x: -100, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.5 }}
+          >
+            <motion.h1
+              className="text-5xl"
+              initial={{ scale: 0.9 }}
+              animate={{ scale: 1 }}
+              transition={{ duration: 0.6 }}
+            >
+              Why Hire Me?
+            </motion.h1>
+            <motion.button
               className={`w-full p-4 text-left ${
                 activeTab === "Experience" ? "button" : ""
               }`}
               onClick={() => setActiveTab("Experience")}
+              whileHover={{ scale: 1.05 }}
             >
               Experience
-            </button>
-            <button
-              className={`w-full p-4 text-left  ${
+            </motion.button>
+            <motion.button
+              className={`w-full p-4 text-left ${
                 activeTab === "Education" ? "button" : ""
               }`}
               onClick={() => setActiveTab("Education")}
+              whileHover={{ scale: 1.05 }}
             >
               Education
-            </button>
-            <button
+            </motion.button>
+            <motion.button
               className={`w-full p-4 text-left ${
                 activeTab === "Skills" ? "button" : ""
               }`}
               onClick={() => setActiveTab("Skills")}
+              whileHover={{ scale: 1.05 }}
             >
               Skills
-            </button>
-            <button
+            </motion.button>
+            <motion.button
               className={`w-full p-4 text-left ${
                 activeTab === "AboutMe" ? "button" : ""
               }`}
               onClick={() => setActiveTab("AboutMe")}
+              whileHover={{ scale: 1.05 }}
             >
               About Me
-            </button>
-          </div>
-          <div className="col-span-3 ">{renderTabContent()}</div>
+            </motion.button>
+          </motion.div>
+          <motion.div
+            className="col-span-3"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.7 }}
+          >
+            {renderTabContent()}
+          </motion.div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

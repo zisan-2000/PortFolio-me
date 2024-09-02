@@ -32,7 +32,7 @@ const Header = () => {
           </button>
         </div>
 
-        <div className="logo textColor text-2xl font-bold md:flex">
+        <div className="logo textColor font text-2xl font-bold md:flex">
           Zulfiker.
         </div>
       </div>
@@ -59,7 +59,7 @@ const Header = () => {
       {/* Theme Toggle and Hire Me Button */}
       <div className="items-center md:flex">
         <ThemeToggle />
-        <button className="ml-4 rounded-md bg-green-500 px-4 py-2 text-white">
+        <button className="font ml-4 rounded-md bg-green-500 px-4 py-2 text-white">
           Hire me
         </button>
       </div>
@@ -80,14 +80,14 @@ const Header = () => {
           </button>
 
           {/* Logo */}
-          <div className="mb-8 mt-4 text-center">
+          <div className="font mb-8 mt-4 text-center">
             <h2 className="text-3xl font-bold text-white">
               Md. Zulfiker Hossain
             </h2>
           </div>
 
           {/* Navigation Links */}
-          <nav className="flex flex-col space-y-6 text-lg">
+          <nav className="font flex flex-col space-y-6 text-lg">
             <Link
               to="/"
               className="flex items-center space-x-3 rounded-md px-4 py-2 transition-all duration-300 hover:bg-indigo-700"
