@@ -81,7 +81,9 @@ const Header = () => {
 
           {/* Logo */}
           <div className="mb-8 mt-4 text-center">
-            <h2 className="text-3xl font-bold text-white">Md. Faysal Ahmed</h2>
+            <h2 className="text-3xl font-bold text-white">
+              Md. Zulfiker Hossain
+            </h2>
           </div>
 
           {/* Navigation Links */}
