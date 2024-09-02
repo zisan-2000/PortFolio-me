@@ -28,7 +28,9 @@
     "react-modal": "^3.16.1",
     "react-redux": "^9.1.2",
     "react-slick": "^0.29.0",
+    "react-typed": "^2.0.12",
     "slick-carousel": "^1.8.1",
+    "typed.js": "^2.1.0",
     "uuid": "^9.0.1"
   },
   "devDependencies": {

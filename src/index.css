@@ -24,6 +24,81 @@
   @apply text-gray-900 dark:text-white;
 }
 
+/* service */
+
+.services {
+  @apply mx-auto grid max-w-screen-xl  grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3;
+}
+
+/* global */
+
+.card {
+  @apply mb-4 flex transform flex-col justify-between rounded-lg border border-gray-200 bg-white p-6 shadow-xl transition-transform hover:scale-105 hover:border-blue-500  hover:shadow-slate-300 dark:border-slate-600 dark:bg-slate-700;
+}
+
+.service-header {
+  @apply mb-4 flex items-center justify-between;
+}
+
+.number {
+  @apply text-3xl font-bold;
+}
+
+.font {
+  @apply font-mono font-light;
+}
+
+.date {
+  @apply text-xl;
+}
+
+.level {
+  @apply text-xl font-semibold text-blue-600 dark:text-blue-400;
+}
+
+.title {
+  @apply text-2xl font-bold text-gray-800 dark:text-white;
+}
+
+.icon {
+  @apply flex h-10 w-10 items-center justify-center rounded-full ring ring-2 hover:-rotate-45 hover:bg-green-500 hover:outline-green-600 hover:transition-all hover:duration-500;
+}
+
+.description {
+  @apply mt-2;
+}
+
+/* scrollbar */
+.scrollbar {
+  @apply max-h-[350px] overflow-y-auto pr-4;
+}
+
+.scrollbar::-webkit-scrollbar {
+  @apply w-2; /* Width of the scrollbar */
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  @apply bg-gray-200; /* Track color */
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  @apply bg-teal-300; /* Thumb (the draggable part) */
+}
+
+.scrollbar::-webkit-scrollbar-thumb:hover {
+  @apply bg-green-600; /* Thumb color on hover */
+}
+
+/* button */
+
+.button {
+  @apply transform rounded-full bg-gradient-to-r from-green-400 to-green-500
+         px-6 py-3 font-semibold text-white shadow-lg transition-all 
+         duration-300 ease-in-out hover:-translate-y-2 hover:from-teal-300  hover:to-teal-400 hover:shadow-xl;
+}
+
+/* responsive */
+
 @screen sm {
   .header {
     @apply p-2;
@@ -35,11 +110,15 @@
   }
 
   .stats {
-    @apply ml-6 flex flex-row;
+    @apply flex flex-row justify-around space-x-6 space-y-0;
   }
 
   .themeChange {
-    @apply dark:bg-slate-900;
+    @apply dark:bg-slate-800;
+  }
+
+  .services {
+    @apply grid-cols-1;
   }
 }
 
@@ -56,6 +135,9 @@
   .themeChange {
     @apply dark:bg-slate-800;
   }
+  .services {
+    @apply grid-cols-2;
+  }
 }
 
 @screen lg {
@@ -66,7 +148,10 @@
     @apply min-h-[calc(100vh-5rem)] flex-row px-12;
   }
   .stats {
-    @apply space-x-8;
+    @apply flex flex-row justify-around space-x-6 space-y-0;
+  }
+  .services {
+    @apply grid-cols-2;
   }
 }
 
@@ -78,7 +163,7 @@
     @apply min-h-[calc(100vh-6rem)] flex-row px-16;
   }
   .stats {
-    @apply space-x-10;
+    @apply flex flex-row justify-around space-x-6 space-y-0;
   }
 }
 
@@ -87,9 +172,9 @@
     @apply px-10 py-6;
   }
   .hero {
-    @apply min-h-[calc(100vh-8rem)] flex-row px-20;
+    @apply min-h-[calc(100vh-6rem)] flex-row px-16;
   }
   .stats {
-    @apply space-x-12;
+    @apply flex flex-row justify-around space-x-6 space-y-0;
   }
 }
