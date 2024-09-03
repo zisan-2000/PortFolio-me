@@ -1,5 +1,5 @@
 import React from "react";
-import { contactData } from "../components/DummyData/DummyData";
+import { contactData } from "../components/DummyData/DummyData"; // Adjust the path accordingly
 
 const ContactPage = () => {
   return (

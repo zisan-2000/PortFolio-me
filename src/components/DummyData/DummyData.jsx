@@ -210,7 +210,41 @@ export const projectData = [
   },
 ];
 
+//contact
 export const contactData = {
   email: "zisan19393871@gmail.com",
   phone: "01793-874189",
 };
+
+//services
+
+// Import the necessary icon
+import { BsArrowDownRight } from "react-icons/bs";
+
+export const servicesData = [
+  {
+    id: 1,
+    title: "Frontend Development with React JS, Next JS & Tailwind",
+    icon: <BsArrowDownRight size={24} />,
+    description:
+      "Building responsive and interactive UIs with React and Tailwind CSS.",
+  },
+  {
+    id: 2,
+    title: "API Development with Django",
+    icon: <BsArrowDownRight size={24} />, // Custom Django Icon used here
+    description: "Creating scalable and secure RESTful APIs using Django.",
+  },
+  {
+    id: 3,
+    title: "API Development with Spring Boot",
+    icon: <BsArrowDownRight size={24} />,
+    description: "Building enterprise-level backend services with Spring Boot.",
+  },
+  {
+    id: 4,
+    title: "UI/UX design",
+    icon: <BsArrowDownRight size={24} />,
+    description: "UI/UX design using Figma",
+  },
+];
