@@ -23,7 +23,7 @@ const Header = () => {
   };
 
   return (
-    <header className="header themeChange sticky top-0 z-50 flex items-center justify-between p-4 shadow-md">
+    <header className="header themeChange font sticky top-0 z-50 flex items-center justify-between p-4 shadow-md">
       {/* Toggle Button for Small and Medium Screens */}
       <div className="flex items-center justify-between gap-2">
         <div className="flex space-x-3 md:hidden">
@@ -32,9 +32,11 @@ const Header = () => {
           </button>
         </div>
 
-        <div className="logo textColor font text-2xl font-bold md:flex">
-          Zulfiker.
-        </div>
+        <Link to="/" className="textColor">
+          <div className="logo textColor font text-2xl font-bold md:flex">
+            Zulfiker.
+          </div>
+        </Link>
       </div>
 
       {/* Navigation Menu for Large Screens */}
@@ -49,7 +51,7 @@ const Header = () => {
           Resume
         </Link>
         <Link to="/work" className="textColor">
-          Work
+          Projects
         </Link>
         <Link to="/contact" className="textColor">
           Contact
@@ -118,7 +120,7 @@ const Header = () => {
               onClick={toggleSidebar} // Close sidebar after clicking a link
             >
               <FaBriefcase size={20} className="text-yellow-400" />
-              <span>Work</span>
+              <span>Projects</span>
             </Link>
             <Link
               to="/contact"

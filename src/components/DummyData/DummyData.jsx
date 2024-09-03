@@ -135,3 +135,61 @@ export const skillsData = [
 export const aboutMeData = {
   text: "I am a dedicated Junior Software Engineer with over 1 years of experience in building responsive and user-friendly web applications. My passion for coding drives me to continuously learn and improve my skills. I enjoy working on challenging projects and collaborating with cross-functional teams to create impactful digital solutions.",
 };
+
+// images for projects
+import project1Img1 from "../../assets/projects/django.jpg";
+import project1Img3 from "../../assets/projects/figma.jpg";
+import project1Img2 from "../../assets/projects/git.jpg";
+
+import {
+  default as project2Img1,
+  default as project2Img2,
+  default as project2Img3,
+} from "../../assets/projects/figma.jpg";
+
+import {
+  default as project3Img1,
+  default as project3Img2,
+  default as project3Img3,
+} from "../../assets/projects/git.jpg";
+
+export const projectData = [
+  {
+    id: 1,
+    projectNumber: "01",
+    title: "Frontend Project",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque consequat, faucibus et, et.",
+    technologies: ["Html 5", "Css 3", "Javascript"],
+    images: [project1Img1, project1Img2, project1Img3],
+    liveLink: "#", // Replace with actual live link
+    repoLink: "#", // Replace with actual GitHub repo link
+  },
+  {
+    id: 2,
+    projectNumber: "02",
+    title: "Fullstack Project",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque consequat, faucibus et, et.",
+    technologies: ["Next.js", "Tailwind.css", "Node.js"],
+    images: [project2Img1, project2Img2, project2Img3],
+    liveLink: "#", // Replace with actual live link
+    repoLink: "#", // Replace with actual GitHub repo link
+  },
+  {
+    id: 3,
+    projectNumber: "03",
+    title: "Frontend Project",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque consequat, faucibus et, et.",
+    technologies: ["Next.js", "Tailwind.css"],
+    images: [project3Img1, project3Img2, project3Img3],
+    liveLink: "#", // Replace with actual live link
+    repoLink: "#", // Replace with actual GitHub repo link
+  },
+];
+
+export const contactData = {
+  email: "zisan19393871@gmail.com",
+  phone: "01793-874189",
+};

@@ -36,6 +36,11 @@
   @apply mb-4 flex transform flex-col justify-between rounded-lg border border-gray-200 bg-white p-6 shadow-xl transition-transform hover:scale-105 hover:border-blue-500  hover:shadow-slate-300 dark:border-slate-600 dark:bg-slate-700;
 }
 
+.cards {
+  flex-direction: column;
+  padding: 1rem;
+}
+
 .service-header {
   @apply mb-4 flex items-center justify-between;
 }
@@ -91,10 +96,33 @@
 
 /* button */
 
+/* Add this to your existing CSS or Tailwind setup */
+
 .button {
   @apply transform rounded-full bg-gradient-to-r from-green-400 to-green-500
          px-6 py-3 font-semibold text-white shadow-lg transition-all 
          duration-300 ease-in-out hover:-translate-y-2 hover:from-teal-300  hover:to-teal-400 hover:shadow-xl;
+}
+
+/* Contact Page Styles */
+.contactPage {
+  @apply flex flex-col items-center justify-center px-4 py-16 md:px-8 lg:px-16;
+}
+
+.contactPage h1 {
+  @apply mb-8 text-center text-4xl font-bold md:text-5xl;
+}
+
+.contactPage .contactInfo {
+  @apply space-y-4 text-center;
+}
+
+.contactPage .contactInfo h2 {
+  @apply text-2xl font-semibold md:text-3xl;
+}
+
+.contactPage .contactInfo p {
+  @apply text-lg md:text-xl;
 }
 
 /* responsive */
@@ -120,6 +148,14 @@
   .services {
     @apply grid-cols-1;
   }
+
+  .cards {
+    flex-direction: row;
+    padding: 1rem;
+  }
+  .contactPage {
+    @apply px-2 py-8;
+  }
 }
 
 @screen md {
@@ -138,6 +174,13 @@
   .services {
     @apply grid-cols-2;
   }
+  .cards {
+    flex-direction: row;
+    padding: 1rem;
+  }
+  .contactPage {
+    @apply px-4 py-12;
+  }
 }
 
 @screen lg {
@@ -153,6 +196,9 @@
   .services {
     @apply grid-cols-2;
   }
+  .contactPage {
+    @apply px-8 py-16;
+  }
 }
 
 @screen xl {
@@ -165,6 +211,9 @@
   .stats {
     @apply flex flex-row justify-around space-x-6 space-y-0;
   }
+  .contactPage {
+    @apply px-12 py-20;
+  }
 }
 
 @screen 2xl {
@@ -176,5 +225,8 @@
   }
   .stats {
     @apply flex flex-row justify-around space-x-6 space-y-0;
+  }
+  .contactPage {
+    @apply px-16 py-24;
   }
 }
