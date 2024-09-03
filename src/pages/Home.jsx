@@ -1,11 +1,12 @@
 import React from "react";
-import HeroSection from "../components/HeroSection";
-import Stats from "../components/Stats";
+import { profileData } from "../components/DummyData/DummyData";
+import HeroSection from "./../components/HomeComponents/HeroSection";
+import Stats from "./../components/HomeComponents/Stats";
 
 const Home = () => {
   return (
     <div className="themeChange ">
-      <HeroSection />
+      <HeroSection profileData={profileData} />
       <Stats />
       {/* <Footer /> */}
     </div>

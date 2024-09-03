@@ -1,6 +1,6 @@
 import React from "react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
-import Header from "./components/Header"; // Import the Header component
+import Header from "./components/Header/Header";
 import ContactPage from "./pages/ContactPage";
 import Home from "./pages/Home";
 import ProjectPage from "./pages/ProjectPage";

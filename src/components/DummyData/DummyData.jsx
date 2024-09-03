@@ -1,5 +1,24 @@
 // dummyData.jsx
 
+// Import the profile image
+import profilePic from "../../assets/images/profile.jpg"; // Replace with the actual path
+
+export const profileData = {
+  name: "Md. Zulfiker Hossain",
+  title: "Junior Software Engineer",
+  description: `As a Junior Software Engineer at Birds of Eden/Adon Venture General
+  Trading LLC, I specialize in building robust and efficient web
+  applications using React Js and Tailwind CSS. My work involves
+  creating dynamic and responsive user interfaces that are both visually
+  appealing and highly functional. In addition to front-end development,
+  I am also experienced in backend development using Django Rest
+  Framework, where I focus on building scalable and secure APIs. My
+  passion for coding drives me to continually improve and expand my
+  skill set, ensuring that I deliver high-quality solutions that meet
+  the needs of users and clients alike.`,
+  image: profilePic,
+};
+
 //experience image
 
 import adon from "../../assets/experience/adon.jpeg";
@@ -41,6 +60,8 @@ export const experienceData = [
     image: southEastBank,
   },
 ];
+
+//educations
 
 export const educationData = [
   {

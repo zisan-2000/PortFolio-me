@@ -1,17 +1,15 @@
 import { motion } from "framer-motion";
 import React from "react";
-import profilePic from "../assets/images/profile.jpg"; // Replace with actual image path
 
-const ProfileImage = () => {
+const ProfileImage = ({ image }) => {
   return (
     <motion.div
       className="relative mt-10 flex items-center justify-center md:mt-0"
       initial={{ scale: 0 }}
       animate={{ scale: 1 }}
       transition={{ duration: 0.5 }}
-      style={{ width: "350px", height: "380px" }} // Adjusted size for the container
+      style={{ width: "350px", height: "380px" }}
     >
-      {/* Motion Circle */}
       <svg
         width="100%"
         height="100%"
@@ -41,12 +39,11 @@ const ProfileImage = () => {
         />
       </svg>
 
-      {/* Profile Image */}
       <img
-        src={profilePic}
+        src={image}
         alt="Profile"
         className="relative z-10 rounded-full border-4 border-green-500 object-cover"
-        style={{ width: "250px", height: "280px" }} // Adjusted size for the image
+        style={{ width: "250px", height: "280px" }}
       />
     </motion.div>
   );
