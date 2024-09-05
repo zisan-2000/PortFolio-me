@@ -5,10 +5,6 @@ import ProjectImageGallery from "./ProjectImageGallery";
 const ProjectCard = ({ project }) => {
   return (
     <div className="cards flex justify-center justify-between gap-28">
-      <div className=" md:w-1/2">
-        <ProjectImageGallery images={project.images} />
-      </div>
-
       <div className="card font flex-col items-start overflow-hidden rounded-lg shadow-lg md:flex-row md:justify-between">
         <div className=" mt-4 md:mt-0 md:pl-8">
           <h2 className=" textColor  size-20 animate-bounce text-5xl font-bold">
@@ -38,6 +34,9 @@ const ProjectCard = ({ project }) => {
             </a>
           </div>
         </div>
+      </div>
+      <div className=" md:w-1/2 ">
+        <ProjectImageGallery images={project.images} />
       </div>
     </div>
   );

@@ -9,7 +9,7 @@ const ProjectImageGallery = ({ images }) => {
   }));
 
   return (
-    <div className="relative h-64 w-full md:h-80 lg:h-96">
+    <div className="scrollbar relative h-64 w-full md:h-80 lg:h-96">
       <ImageGallery
         items={galleryImages}
         showThumbnails={true}

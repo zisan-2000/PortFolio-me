@@ -61,9 +61,11 @@ const Header = () => {
       {/* Theme Toggle and Hire Me Button */}
       <div className="items-center md:flex">
         <ThemeToggle />
-        <button className="font ml-4 rounded-md bg-green-500 px-4 py-2 text-white">
-          Hire me
-        </button>
+        <Link to="/contact">
+          <button className="font ml-4 rounded-md bg-green-500 px-4 py-2 text-white">
+            Hire me
+          </button>
+        </Link>
       </div>
 
       {/* Sidebar for Small and Medium Screens */}
